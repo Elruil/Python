@@ -48,7 +48,13 @@ for i in range(len(list_2)):
         result = list_2[i]       
     count = 0  
 print(result)                   
-            
+# num = list_1[0]
+# separate = abs(list_1[0] - k)
+# for i in range (0, len(list_1)):
+#     if abs(list_1[i] - k) < separate:
+#         num = list_1[i]
+#         separate = abs(list_1[i] - k)
+# print(num)            
 
 # Задача 20: В настольной игре Скрабл (Scrabble) каждая буква имеет определенную ценность.
 # В случае с английским алфавитом очки распределяются так:
@@ -69,16 +75,15 @@ print(result)
 #   Будем считать, что на вход подается только одно слово, которое содержит либо только английские,
 #   либо только русские буквы.
 d = dict()
-d["A", "E", "I", "O", "U", "L", "N", "S", "T","R"] = 1
-d["D", "G"] = 2
-d["B", "C", "M", "P"] = 3
-d["F", "H", "V", "W", "Y"] = 4
-d["K"] = 5
-d["J", "X"] = 8
-d["Q", "Z"] = 10
+d["AEIOULNSTRАВЕИНОРСТ"] = 1
+d["DGДКЛМПУ"] = 2
+d["BCMPБГЁЬЯ"] = 3
+d["FHVWYЙЫ" ] = 4
+d["KЖЗХЦЧ"] = 5
+d["JXШЭЮ"] = 8
+d["QZФЩЪ"] = 10
 
-print(d)
-print(type(d))
+
 word = input("Введите слоо для оценки:  ")
 print(word)
 result = 0
